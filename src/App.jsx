@@ -14,19 +14,22 @@ export const App = () => {
 };
 
 
-// *1.Variables
+//* 1.Variables
 //? you can embed any JavaScript variable withiun jsx by enclosing it in the curly brackets. The Value of the variable will be inserted into the DOM at the respected location.
 
+//* 2. Expressions
+//? JSX allows you to write Javascript expressions inside curly braces.This includes operations , function calls, and other Javascript expressions that produce  a value.
 
 const NetflixSeries=()=>{
   const name="Queen of tears";
+  const rating=5+3.2;
   return(
     <> 
     <div>
       <img src="a.jpg" alt="" style={{width:"40%", height:"auto"}}/>
     </div>
     <h2>Name:{name}</h2>
-  <h3>Rating:8.2</h3> 
+  <h3>Rating:{rating}</h3> 
   <p>Summary: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, harum unde nulla doloribus ex qui praesentium cum! Delectus cumque exercitationem, maiores eum quia nemo beatae ipsa repellat numquam eveniet at.</p>
   </>
   );}
